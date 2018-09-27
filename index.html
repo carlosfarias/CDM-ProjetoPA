@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Calculadora Progressão Aritimética</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/main.js"></script>
+</head>
+  
+<body onload="document.calc.a1.focus()" style="font: 13px Tahoma">
+      <h2 style="font: small-caps 20px Tahoma; color: #133588; background-color: #F6F6F6; display: block">Calcule uma PA ou PG a partir do primeiro termo e da raz�o</h2>
+  
+      <form name="calc" action="#" onsubmit="return Gerar()">
+        Primeiro termo (a<sub>1</sub>): <input name="a1" type="text" size="4" />&nbsp;&nbsp;&nbsp;
+        Raz�o (R): <input name="r" type="text" size="4" maxlength="2" />&nbsp;&nbsp;
+        Qtde de termos (n): <input name="n" type="text" size="4" maxlength="2" />&nbsp;&nbsp;
+        PA <input name="tipo" type="radio" value="pa" checked="checked" onclick="Gerar()" />&nbsp;&nbsp;
+        PG <input name="tipo" type="radio" value="pg" onclick="Gerar()" />&nbsp;&nbsp;
+        <input type="submit" value="Gerar >>" style="border: outset 1px #122561" /><br /><br />
+        Resultado: <br /><textarea name="resultado" cols="50" rows="8" style="background-color: #DFDFDF; border: solid 1px #122561; color: #225651; font: 14px Tahoma" readonly="readonly"></textarea>
+  
+        <br /><br /><span style="color: #FF0000">Dica</span>: ganhe tempo pressionando ENTER para calcular o resultado
+      </form>
+</body>
+</html>
